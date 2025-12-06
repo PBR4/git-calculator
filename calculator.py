@@ -5,23 +5,23 @@ this is a real calculator!
 '''
 import math
 
-def add(numbers):
+def sum_all(numbers):
     res = sum(numbers)
     return f"the sum is {res}"
 
-def tafrigh(numbers):
+def subtract(numbers):
     res = numbers[0]
     for num in numbers[1:]:
         res -= num
     return f"the substract of the numbers is {res}"
 
-def zarb(numbers):
+def multiplication(numbers):
     res = 1
     for num in numbers:
         res *= num
     return f"zarb adad hast {res} "
 
-def taqsim(numbers):
+def divide(numbers):
     res = numbers[0]
     for num in numbers[1:]:
         if num == 0:
@@ -34,8 +34,8 @@ def logarithms(x, base=math.e):
 
 
 adad = [4, 5, 6]
-print(zarb(adad))
-print(add(adad))
-print(taqsim(adad))
-print(tafrigh(adad))
+print(multiplication(adad))
+print(sum_all(adad))
+print(divide(adad))
+print(subtract(adad))
 print(logarithms(10))
